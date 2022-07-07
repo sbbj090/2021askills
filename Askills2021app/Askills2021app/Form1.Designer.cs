@@ -65,7 +65,7 @@ namespace Askills2021app
             this.label1.Font = new System.Drawing.Font("Rosatom", 16F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(94, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 29);
+            this.label1.Size = new System.Drawing.Size(198, 28);
             this.label1.TabIndex = 2;
             this.label1.Text = "Rosatom Logistics";
             // 
@@ -81,7 +81,7 @@ namespace Askills2021app
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(884, 511);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
