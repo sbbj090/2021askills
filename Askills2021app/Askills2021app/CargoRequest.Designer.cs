@@ -32,45 +32,48 @@ namespace Askills2021app
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.textBox15 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox1.Location = new System.Drawing.Point(113, 17);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(319, 24);
             this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Наименование";
             // 
             // label1
             // 
@@ -98,73 +101,6 @@ namespace Askills2021app
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Заказчик";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Location = new System.Drawing.Point(6, 20);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(438, 77);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Реквизиты организации";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(51, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(381, 24);
-            this.textBox2.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(6, 50);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "ИНН:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(155, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(289, 24);
-            this.textBox3.TabIndex = 4;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(6, 103);
-            this.label3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "ФИО ответственного:";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(214, 130);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(230, 24);
-            this.textBox4.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(6, 133);
-            this.label4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(202, 17);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Контактный телефон или Email:";
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.textBox9);
@@ -185,11 +121,66 @@ namespace Askills2021app
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Спецификация груза";
             // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox9.Location = new System.Drawing.Point(192, 137);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(240, 24);
+            this.textBox9.TabIndex = 8;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(6, 140);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(137, 17);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Особые требования:";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox8.Location = new System.Drawing.Point(192, 107);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(240, 24);
+            this.textBox8.TabIndex = 6;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(6, 110);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(179, 17);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Объем занимаемый грузом:";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox7.Location = new System.Drawing.Point(192, 77);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(240, 24);
+            this.textBox7.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(6, 80);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(79, 17);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Общий вес:";
+            // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(96, 47);
+            this.textBox5.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox5.Location = new System.Drawing.Point(192, 47);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(336, 24);
+            this.textBox5.Size = new System.Drawing.Size(240, 24);
             this.textBox5.TabIndex = 2;
             // 
             // label5
@@ -204,9 +195,10 @@ namespace Askills2021app
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(113, 17);
+            this.textBox6.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox6.Location = new System.Drawing.Point(192, 17);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(319, 24);
+            this.textBox6.Size = new System.Drawing.Size(240, 24);
             this.textBox6.TabIndex = 0;
             // 
             // label6
@@ -219,56 +211,76 @@ namespace Askills2021app
             this.label6.TabIndex = 1;
             this.label6.Text = "Наименование:";
             // 
-            // textBox7
+            // textBox4
             // 
-            this.textBox7.Location = new System.Drawing.Point(91, 77);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(341, 24);
-            this.textBox7.TabIndex = 4;
+            this.textBox4.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox4.Location = new System.Drawing.Point(214, 130);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(230, 24);
+            this.textBox4.TabIndex = 6;
             // 
-            // label7
+            // label4
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(6, 80);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 17);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Общий вес:";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(6, 133);
+            this.label4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(202, 17);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Контактный телефон или Email:";
             // 
-            // textBox8
+            // textBox3
             // 
-            this.textBox8.Location = new System.Drawing.Point(192, 107);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(240, 24);
-            this.textBox8.TabIndex = 6;
+            this.textBox3.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox3.Location = new System.Drawing.Point(214, 100);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(230, 24);
+            this.textBox3.TabIndex = 4;
             // 
-            // label8
+            // groupBox2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(6, 110);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 17);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Объем занимаемый грузом:";
+            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Location = new System.Drawing.Point(6, 20);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(438, 77);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Реквизиты организации";
             // 
-            // textBox9
+            // textBox2
             // 
-            this.textBox9.Location = new System.Drawing.Point(149, 137);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(283, 24);
-            this.textBox9.TabIndex = 8;
+            this.textBox2.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox2.Location = new System.Drawing.Point(113, 47);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(319, 24);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "ИНН";
             // 
-            // label9
+            // label2
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(6, 140);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 17);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Особые требования:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(6, 50);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "ИНН:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(6, 103);
+            this.label3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(142, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "ФИО ответственного:";
             // 
             // groupBox4
             // 
@@ -288,8 +300,47 @@ namespace Askills2021app
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Получатель";
             // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox12.Location = new System.Drawing.Point(169, 50);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(229, 24);
+            this.textBox12.TabIndex = 12;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(6, 53);
+            this.label12.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(157, 17);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Адрес точки получения:";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox11.Location = new System.Drawing.Point(198, 20);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(200, 24);
+            this.textBox11.TabIndex = 10;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.Location = new System.Drawing.Point(6, 23);
+            this.label11.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(189, 17);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Наименование организации:";
+            // 
             // textBox15
             // 
+            this.textBox15.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox15.Location = new System.Drawing.Point(154, 110);
             this.textBox15.Name = "textBox15";
             this.textBox15.Size = new System.Drawing.Size(244, 24);
@@ -308,6 +359,7 @@ namespace Askills2021app
             // 
             // textBox16
             // 
+            this.textBox16.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox16.Location = new System.Drawing.Point(155, 80);
             this.textBox16.Name = "textBox16";
             this.textBox16.Size = new System.Drawing.Size(243, 24);
@@ -320,51 +372,23 @@ namespace Askills2021app
             this.label18.Location = new System.Drawing.Point(6, 83);
             this.label18.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(143, 17);
+            this.label18.Size = new System.Drawing.Size(142, 17);
             this.label18.TabIndex = 5;
             this.label18.Text = "ФИО ответственного:";
             // 
-            // textBox11
+            // maskedTextBox1
             // 
-            this.textBox11.Location = new System.Drawing.Point(198, 20);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(200, 24);
-            this.textBox11.TabIndex = 10;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(6, 23);
-            this.label11.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(190, 17);
-            this.label11.TabIndex = 11;
-            this.label11.Text = "Наименование организации:";
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(169, 50);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(229, 24);
-            this.textBox12.TabIndex = 12;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(6, 53);
-            this.label12.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(157, 17);
-            this.label12.TabIndex = 13;
-            this.label12.Text = "Адрес точки получения:";
+            this.maskedTextBox1.Location = new System.Drawing.Point(119, 385);
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox1.TabIndex = 9;
             // 
             // CargoRequest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 511);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -374,13 +398,14 @@ namespace Askills2021app
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.CargoRequest_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -416,5 +441,6 @@ namespace Askills2021app
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
