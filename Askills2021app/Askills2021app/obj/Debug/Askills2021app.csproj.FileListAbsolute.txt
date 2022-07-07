@@ -1,0 +1,11 @@
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\Askills2021app.exe.config
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\Askills2021app.exe
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\Askills2021app.pdb
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.AssemblyReference.cache
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.Form1.resources
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.Properties.Resources.resources
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.GenerateResource.cache
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.CoreCompileInputs.cache
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.exe
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.pdb
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.CargoRequest.resources

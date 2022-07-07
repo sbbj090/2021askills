@@ -16,5 +16,21 @@ namespace Askills2021app
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //CargoRequest frm = new CargoRequest();
+            //frm.Show();
+            //Hide();
+
+
+
+            this.Hide();
+            Form CargoRequest = new CargoRequest();
+            CargoRequest.StartPosition = FormStartPosition.Manual;
+            CargoRequest.Left = this.Left;
+            CargoRequest.Top = this.Top;
+            CargoRequest.Show();
+        }
     }
 }
