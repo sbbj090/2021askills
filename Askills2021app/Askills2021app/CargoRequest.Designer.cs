@@ -74,6 +74,7 @@ namespace Askills2021app
             this.textBox1.Size = new System.Drawing.Size(319, 24);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Наименование";
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
             // 
             // label1
             // 

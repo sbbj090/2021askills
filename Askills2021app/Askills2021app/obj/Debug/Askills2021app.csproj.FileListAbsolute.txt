@@ -21,3 +21,4 @@ G:\Programmirovanie\git_hub\2021askills\Askills2021app\Askills2021app\obj\Debug\
 G:\Programmirovanie\git_hub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.CoreCompileInputs.cache
 G:\Programmirovanie\git_hub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.exe
 G:\Programmirovanie\git_hub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.pdb
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.SuggestedBindingRedirects.cache

@@ -26,5 +26,10 @@ namespace Askills2021app
             Form1.Top = this.Top;
             Form1.Show();
         }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
