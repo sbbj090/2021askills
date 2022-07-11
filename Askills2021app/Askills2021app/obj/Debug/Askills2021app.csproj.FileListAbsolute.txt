@@ -22,3 +22,18 @@ G:\Programmirovanie\git_hub\2021askills\Askills2021app\Askills2021app\obj\Debug\
 G:\Programmirovanie\git_hub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.exe
 G:\Programmirovanie\git_hub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.pdb
 C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.SuggestedBindingRedirects.cache
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\bin\Debug\Askills2021app.exe.config
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\bin\Debug\Askills2021app.exe
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\bin\Debug\Askills2021app.pdb
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.AssemblyReference.cache
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.SuggestedBindingRedirects.cache
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.CargoRequest.resources
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.Form1.resources
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.Properties.Resources.resources
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.GenerateResource.cache
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.CoreCompileInputs.cache
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.exe
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.pdb
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.Route.resources
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.ResolveComReference.cache
+D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\bin\Debug\Zayavka.doc
