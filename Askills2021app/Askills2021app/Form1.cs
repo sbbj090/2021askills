@@ -19,7 +19,6 @@ namespace Askills2021app
 
         private void button1_Click(object sender, EventArgs e)
         {
-
             this.Hide();
             Form CargoRequest = new CargoRequest();
             CargoRequest.StartPosition = FormStartPosition.Manual;
