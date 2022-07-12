@@ -27,10 +27,5 @@ namespace Askills2021app
             CargoRequest.Top = this.Top;
             CargoRequest.Show();
         }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

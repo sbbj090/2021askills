@@ -15,35 +15,6 @@ namespace Askills2021app
         public CargoRequest()
         {
             InitializeComponent();
-
-            textBox1.Text = "Наименование";
-            
-            
-            textBox6.Text = "Количество";
-            
-            
-            
-            
-            
-            
-            
-
-            textBox1.ForeColor = Color.Gray;
-            textBox2.ForeColor = Color.Gray;
-
-            textBox4.ForeColor = Color.Gray;
-            textBox5.ForeColor = Color.Gray;
-            textBox6.ForeColor = Color.Gray;
-            textBox7.ForeColor = Color.Gray; 
-            textBox8.ForeColor = Color.Gray;
-            textBox9.ForeColor = Color.Gray;
-            textBox11.ForeColor = Color.Gray;
-         
-            textBox15.ForeColor = Color.Gray;
-            textBox16.ForeColor = Color.Gray;
-
-
-
         }
         private void CargoRequest_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -208,6 +179,24 @@ namespace Askills2021app
             }
         }
         //
+        private void textBox10_Enter(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "Адрес точки отправления")
+            {
+                textBox10.Text = "";
+                textBox10.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox10_Leave(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "")
+            {
+                textBox10.Text = "Адрес точки отправления";
+                textBox10.ForeColor = Color.Gray;
+            }
+        }
+        //
         private void textBox11_Enter(object sender, EventArgs e)
         {
             if (textBox11.Text == "Наименование организации")
@@ -247,7 +236,7 @@ namespace Askills2021app
             if (textBox15.Text == "ФИО ответственного")
             {
                 textBox15.Text = "";
-                textBox15.ForeColor = Color.Gray;
+                textBox15.ForeColor = Color.Black;
             }
         }
         private void textBox15_Leave(object sender, EventArgs e)
@@ -255,7 +244,7 @@ namespace Askills2021app
             if (textBox15.Text == "")
             {
                 textBox15.Text = "ФИО ответственного";
-                textBox15.ForeColor = Color.Black;
+                textBox15.ForeColor = Color.Gray;
             }
         }
         //
@@ -275,6 +264,7 @@ namespace Askills2021app
                 textBox16.ForeColor = Color.Gray;
             }
         }
+        //
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -291,29 +281,20 @@ namespace Askills2021app
                 {"<VOL>", textBox8.Text },
                 {"<REQ>", textBox9.Text },
                 {"<ORGP>", textBox11.Text },
-                {"<>", textBox12.Text },
-                {"<ORG>", textBox15.Text },
-                {"<ORG>", textBox16.Text }
+                {"<TO>", textBox10.Text },
+                {"<TP>", textBox12.Text },
+                {"<OTVP>", textBox15.Text },
+                {"<TELP>", textBox16.Text }
+                //desc
+                //dto
+                //dtp
+                //prc
+                
             };
             helper.Process(items);
+            MessageBox.Show("Заявка создана.");
         }
 
-        private void textBox10_Enter(object sender, EventArgs e)
-        {
-            if (textBox10.Text == "Адрес точки отправления")
-            {
-                textBox10.Text = "";
-                textBox10.ForeColor = Color.Black;
-            }
-        }
 
-        private void textBox10_Leave(object sender, EventArgs e)
-        {
-            if (textBox10.Text == "")
-            {
-                textBox10.Text = "Адрес точки отправления";
-                textBox10.ForeColor = Color.Gray;
-            }
-        }
     }
 }

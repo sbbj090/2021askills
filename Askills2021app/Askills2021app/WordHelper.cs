@@ -58,7 +58,6 @@ namespace Askills2021app
                 app.ActiveDocument.SaveAs2(newFileName);
                 app.ActiveDocument.Close();
                 app.Quit();
-
                 return true;
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
