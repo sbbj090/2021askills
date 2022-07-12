@@ -37,3 +37,6 @@ D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Aski
 D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.Route.resources
 D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.ResolveComReference.cache
 D:\Студент41\Мои документы\ls\2021askills\Askills2021app\Askills2021app\bin\Debug\Zayavka.doc
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\Zayavka.doc
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.ResolveComReference.cache
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.Route.resources

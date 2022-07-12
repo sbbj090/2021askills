@@ -8,7 +8,7 @@ using Word = Microsoft.Office.Interop.Word;
 
 namespace Askills2021app
 {
-    internal class WordHelper
+    class WordHelper
     {
         private FileInfo _fileInfo;
         public WordHelper(string fileName)
@@ -62,11 +62,11 @@ namespace Askills2021app
                 return true;
             }
             catch (Exception ex) { Console.WriteLine(ex.Message); }
-            /*finally
+            finally
             {
                 if (app != null)
                 app.Quit();
-            }*/
+            }
             return false;
         }
     }

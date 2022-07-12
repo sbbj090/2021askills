@@ -19,11 +19,6 @@ namespace Askills2021app
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //CargoRequest frm = new CargoRequest();
-            //frm.Show();
-            //Hide();
-
-
 
             this.Hide();
             Form CargoRequest = new CargoRequest();

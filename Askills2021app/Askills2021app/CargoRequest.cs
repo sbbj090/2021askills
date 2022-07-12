@@ -17,22 +17,20 @@ namespace Askills2021app
             InitializeComponent();
 
             textBox1.Text = "Наименование";
-            textBox2.Text = "ИНН";
-            textBox3.Text = "ФИО ответственного";
-            textBox4.Text = "Контактный телефон или Email";
-            textBox5.Text = "Наименование";
+            
+            
             textBox6.Text = "Количество";
-            textBox7.Text = "Общий вес";
-            textBox8.Text = "Объем занимаемый грузом";
-            textBox9.Text = "Особые требования";
-            textBox11.Text = "Наименование организации";
-            textBox12.Text = "Адрес точки получения";
-            textBox15.Text = "ФИО ответственного";
-            textBox16.Text = "Контактный телефон";
+            
+            
+            
+            
+            
+            
+            
 
             textBox1.ForeColor = Color.Gray;
             textBox2.ForeColor = Color.Gray;
-            textBox3.ForeColor = Color.Gray;
+
             textBox4.ForeColor = Color.Gray;
             textBox5.ForeColor = Color.Gray;
             textBox6.ForeColor = Color.Gray;
@@ -40,7 +38,7 @@ namespace Askills2021app
             textBox8.ForeColor = Color.Gray;
             textBox9.ForeColor = Color.Gray;
             textBox11.ForeColor = Color.Gray;
-            textBox12.ForeColor = Color.Gray;
+         
             textBox15.ForeColor = Color.Gray;
             textBox16.ForeColor = Color.Gray;
 
@@ -283,9 +281,39 @@ namespace Askills2021app
             var helper = new WordHelper("Zayavka.doc");
             var items = new Dictionary<string, string>
             {
-                {"<ORG>", textBox1.Text }
+                {"<ORGZ>", textBox1.Text },
+                {"<INN>", textBox2.Text },
+                {"<OTVZ>", textBox3.Text },
+                {"<EMAILZ>", textBox4.Text },
+                {"<CNAME>", textBox5.Text },
+                {"<QTY>", textBox6.Text },
+                {"<WGT>", textBox7.Text },
+                {"<VOL>", textBox8.Text },
+                {"<REQ>", textBox9.Text },
+                {"<ORGP>", textBox11.Text },
+                {"<>", textBox12.Text },
+                {"<ORG>", textBox15.Text },
+                {"<ORG>", textBox16.Text }
             };
             helper.Process(items);
+        }
+
+        private void textBox10_Enter(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "Адрес точки отправления")
+            {
+                textBox10.Text = "";
+                textBox10.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox10_Leave(object sender, EventArgs e)
+        {
+            if (textBox10.Text == "")
+            {
+                textBox10.Text = "Адрес точки отправления";
+                textBox10.ForeColor = Color.Gray;
+            }
         }
     }
 }
