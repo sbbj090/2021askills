@@ -34,6 +34,8 @@ namespace Askills2021app
             this.label10 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -127,6 +129,8 @@ namespace Askills2021app
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.label13);
+            this.groupBox3.Controls.Add(this.richTextBox1);
             this.groupBox3.Controls.Add(this.textBox9);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.textBox8);
@@ -137,13 +141,37 @@ namespace Askills2021app
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.textBox6);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Location = new System.Drawing.Point(6, 263);
+            this.groupBox3.Location = new System.Drawing.Point(6, 173);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 0, 3, 3);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(438, 168);
+            this.groupBox3.Size = new System.Drawing.Size(438, 258);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Спецификация заявки";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(6, 168);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(74, 17);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Описание:";
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Rosatom", 9.7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Gray;
+            this.richTextBox1.Location = new System.Drawing.Point(202, 168);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(230, 84);
+            this.richTextBox1.TabIndex = 10;
+            this.richTextBox1.TabStop = false;
+            this.richTextBox1.Text = "Описание";
+            this.richTextBox1.Enter += new System.EventHandler(this.richTextBox1_Enter);
+            this.richTextBox1.Leave += new System.EventHandler(this.richTextBox1_Leave);
             // 
             // textBox9
             // 
@@ -187,7 +215,7 @@ namespace Askills2021app
             this.label8.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.Location = new System.Drawing.Point(6, 110);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(180, 17);
+            this.label8.Size = new System.Drawing.Size(179, 17);
             this.label8.TabIndex = 7;
             this.label8.Text = "Объем занимаемый грузом:";
             // 
@@ -274,7 +302,7 @@ namespace Askills2021app
             // 
             this.textBox4.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox4.ForeColor = System.Drawing.Color.Gray;
-            this.textBox4.Location = new System.Drawing.Point(208, 232);
+            this.textBox4.Location = new System.Drawing.Point(208, 146);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(230, 24);
             this.textBox4.TabIndex = 6;
@@ -310,7 +338,7 @@ namespace Askills2021app
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(6, 235);
+            this.label4.Location = new System.Drawing.Point(6, 149);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(202, 17);
@@ -321,7 +349,7 @@ namespace Askills2021app
             // 
             this.textBox3.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.ForeColor = System.Drawing.Color.Gray;
-            this.textBox3.Location = new System.Drawing.Point(208, 202);
+            this.textBox3.Location = new System.Drawing.Point(208, 116);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(230, 24);
             this.textBox3.TabIndex = 4;
@@ -334,10 +362,10 @@ namespace Askills2021app
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Rosatom", 9.749999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(6, 205);
+            this.label3.Location = new System.Drawing.Point(6, 119);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 17);
+            this.label3.Size = new System.Drawing.Size(142, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "ФИО ответственного:";
             // 
@@ -403,7 +431,7 @@ namespace Askills2021app
             this.label11.Location = new System.Drawing.Point(6, 23);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(190, 17);
+            this.label11.Size = new System.Drawing.Size(189, 17);
             this.label11.TabIndex = 11;
             this.label11.Text = "Наименование организации:";
             // 
@@ -451,7 +479,7 @@ namespace Askills2021app
             this.label18.Location = new System.Drawing.Point(6, 83);
             this.label18.Margin = new System.Windows.Forms.Padding(3, 3, 3, 0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(143, 17);
+            this.label18.Size = new System.Drawing.Size(142, 17);
             this.label18.TabIndex = 5;
             this.label18.Text = "ФИО ответственного:";
             // 
@@ -462,7 +490,7 @@ namespace Askills2021app
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(163, 44);
             this.button1.TabIndex = 9;
-            this.button1.Text = "Продолжить";
+            this.button1.Text = "Создать заявку";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -475,6 +503,7 @@ namespace Askills2021app
             this.button2.TabIndex = 12;
             this.button2.Text = "Назад";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // CargoRequest
             // 
@@ -534,5 +563,7 @@ namespace Askills2021app
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }

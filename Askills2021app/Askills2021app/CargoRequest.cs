@@ -265,7 +265,23 @@ namespace Askills2021app
             }
         }
         //
+        private void richTextBox1_Enter(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text == "Описание")
+            {
+                richTextBox1.Text = "";
+                richTextBox1.ForeColor = Color.Black;
+            }
+        }
 
+        private void richTextBox1_Leave(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text == "")
+            {
+                richTextBox1.Text = "Описание";
+                richTextBox1.ForeColor = Color.Gray;
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             var helper = new WordHelper("Zayavka.doc");
@@ -284,8 +300,8 @@ namespace Askills2021app
                 {"<TO>", textBox10.Text },
                 {"<TP>", textBox12.Text },
                 {"<OTVP>", textBox15.Text },
-                {"<TELP>", textBox16.Text }
-                //desc
+                {"<TELP>", textBox16.Text },
+                {"<DESC>", richTextBox1.Text },
                 //dto
                 //dtp
                 //prc
@@ -295,6 +311,9 @@ namespace Askills2021app
             MessageBox.Show("Заявка создана.");
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
