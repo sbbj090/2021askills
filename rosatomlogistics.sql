@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Хост: 127.0.0.1
--- Время создания: Июл 08 2022 г., 10:20
+-- Время создания: Июл 18 2022 г., 21:12
 -- Версия сервера: 5.5.25
 -- Версия PHP: 5.3.13
 
@@ -27,15 +27,16 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `заказчик` (
-  `Номер заявки` int(10) NOT NULL,
+  `Номер заявки` int(10) NOT NULL AUTO_INCREMENT,
   `Наименование` varchar(255) NOT NULL,
   `Адрес точки отправления` varchar(255) NOT NULL,
   `ИНН` int(11) NOT NULL,
   `Ответственный` varchar(255) NOT NULL,
   `Телефон` varchar(11) NOT NULL,
   `E-mail` varchar(50) NOT NULL,
-  `Дата и время отправления` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `Дата и время отправления` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`Номер заявки`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
 
 -- --------------------------------------------------------
 
@@ -56,13 +57,14 @@ CREATE TABLE IF NOT EXISTS `заявка` (
 --
 
 CREATE TABLE IF NOT EXISTS `получатель` (
-  `Номер заявки` int(10) NOT NULL,
+  `Номер заявки` int(10) NOT NULL AUTO_INCREMENT,
   `Наименование` varchar(255) NOT NULL,
   `Адрес точки получения` varchar(255) NOT NULL,
   `Ответственный` varchar(255) NOT NULL,
   `Телефон` varchar(11) NOT NULL,
-  `Дата и время прибытия` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `Дата и время прибытия` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`Номер заявки`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -71,13 +73,14 @@ CREATE TABLE IF NOT EXISTS `получатель` (
 --
 
 CREATE TABLE IF NOT EXISTS `спецификация заявки` (
-  `Номер заявки` int(10) NOT NULL,
+  `Номер заявки` int(10) NOT NULL AUTO_INCREMENT,
   `Наименование` varchar(255) NOT NULL,
   `Кол-во` int(16) NOT NULL,
   `Вес, кг` float NOT NULL,
   `Объем, м3` float NOT NULL,
-  `Особые требования` varchar(255) NOT NULL DEFAULT 'Нет'
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+  `Особые требования` varchar(255) NOT NULL DEFAULT 'Нет',
+  PRIMARY KEY (`Номер заявки`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

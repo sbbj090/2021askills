@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,7 @@ namespace Askills2021app
         {
             InitializeComponent();
         }
+
         private void CargoRequest_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
@@ -60,6 +62,25 @@ namespace Askills2021app
             }
         }
         //
+        private void maskedTextBox1_Enter(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text == "ИНН")
+            {
+                maskedTextBox1.Text = "";
+                maskedTextBox1.ForeColor = Color.Black;
+                maskedTextBox1.Mask = "000000000000";
+            }
+        }
+        private void maskedTextBox1_Leave(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text == "")
+            {
+                maskedTextBox1.Mask = "";
+                maskedTextBox1.Text = "ИНН";
+                maskedTextBox1.ForeColor = Color.Gray;
+            }
+        }
+        //
         private void textBox3_Enter(object sender, EventArgs e)
         {
             if (textBox3.Text == "ФИО ответственного")
@@ -85,13 +106,15 @@ namespace Askills2021app
                 textBox4.ForeColor = Color.Black; 
             }
         }
-        private void textBox4_Leave(object sender, EventArgs e)
+        public void textBox4_Leave(object sender, EventArgs e)
         {
             if (textBox4.Text == "")
             {
                 textBox4.Text = "Контактный телефон или Email";
                 textBox4.ForeColor = Color.Gray;
             }
+
+            
         }
         //
         private void textBox5_Enter(object sender, EventArgs e)
@@ -284,6 +307,49 @@ namespace Askills2021app
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            string em_z = "НИХУЯ@МАИЛ";
+            string tel_z = "МОБИЛА";
+
+            if ((textBox4.Text).Contains('@'))
+            {
+                em_z = textBox4.Text;
+            }
+            if ((textBox4.Text).Contains('+'))
+            {
+                tel_z = textBox4.Text;
+            }
+
+
+
+
+            DB dB = new DB();
+
+            MySqlCommand command_z = new MySqlCommand
+                ("INSERT INTO `rosatomlogistics`.`заказчик` " +
+                "(`Номер заявки` ,`Наименование` ,`Адрес точки отправления` ,`ИНН` ,`Ответственный` ,`Телефон` ,`E-mail` ,`Дата и время отправления`)" +
+                "VALUES(NULL, @ORG_Z, @TO_Z, @INN_Z, @OTV_Z, @TEL_Z, @EM_Z,CURRENT_TIMESTAMP); ", dB.getConnection());
+            command_z.Parameters.Add("@ORG_Z", MySqlDbType.VarChar).Value = textBox1.Text;
+            command_z.Parameters.Add("@TO_Z", MySqlDbType.VarChar).Value = textBox10.Text;
+            command_z.Parameters.Add("@INN_Z", MySqlDbType.Int64).Value = textBox2.Text;
+            command_z.Parameters.Add("@OTV_Z", MySqlDbType.VarChar).Value = textBox3.Text;
+            command_z.Parameters.Add("@TEL_Z", MySqlDbType.VarChar).Value = tel_z;
+            command_z.Parameters.Add("@EM_Z", MySqlDbType.VarChar).Value = em_z;
+
+
+
+            dB.openConnection();
+
+            if (command_z.ExecuteNonQuery() == 1)
+                MessageBox.Show("Заявка создана");
+            else
+                MessageBox.Show("Ошибка заполнения заявки");
+
+            dB.closeConnection();
+
+
+
+
+
             var helper = new WordHelper("Zayavka.doc");
             var items = new Dictionary<string, string>
             {
@@ -308,12 +374,20 @@ namespace Askills2021app
                 
             };
             helper.Process(items);
+
+            
+
+
             MessageBox.Show("Заявка создана.");
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+        
     }
 }
