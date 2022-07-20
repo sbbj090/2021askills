@@ -45,7 +45,7 @@ namespace Askills2021app
             }
         }
         //
-        private void textBox2_Enter(object sender, EventArgs e)
+        /*private void textBox2_Enter(object sender, EventArgs e)
         {
             if (textBox2.Text == "ИНН")
             {
@@ -60,7 +60,7 @@ namespace Askills2021app
                 textBox2.Text = "ИНН";
                 textBox2.ForeColor = Color.Gray;
             }
-        }
+        }*/
         //
         private void maskedTextBox1_Enter(object sender, EventArgs e)
         {
@@ -330,7 +330,7 @@ namespace Askills2021app
                 "VALUES(NULL, @ORG_Z, @TO_Z, @INN_Z, @OTV_Z, @TEL_Z, @EM_Z,CURRENT_TIMESTAMP); ", dB.getConnection());
             command_z.Parameters.Add("@ORG_Z", MySqlDbType.VarChar).Value = textBox1.Text;
             command_z.Parameters.Add("@TO_Z", MySqlDbType.VarChar).Value = textBox10.Text;
-            command_z.Parameters.Add("@INN_Z", MySqlDbType.Int64).Value = textBox2.Text;
+            command_z.Parameters.Add("@INN_Z", MySqlDbType.Int64).Value = maskedTextBox1.Text;
             command_z.Parameters.Add("@OTV_Z", MySqlDbType.VarChar).Value = textBox3.Text;
             command_z.Parameters.Add("@TEL_Z", MySqlDbType.VarChar).Value = tel_z;
             command_z.Parameters.Add("@EM_Z", MySqlDbType.VarChar).Value = em_z;
@@ -354,7 +354,7 @@ namespace Askills2021app
             var items = new Dictionary<string, string>
             {
                 {"<ORGZ>", textBox1.Text },
-                {"<INN>", textBox2.Text },
+                {"<INN>", maskedTextBox1.Text },
                 {"<OTVZ>", textBox3.Text },
                 {"<EMAILZ>", textBox4.Text },
                 {"<CNAME>", textBox5.Text },
