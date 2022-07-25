@@ -57,6 +57,12 @@
       <DependentUpon>CargoRequest.cs</DependentUpon>
     </Compile>
     <Compile Include="DB.cs" />
+    <Compile Include="dbauth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbauth.Designer.cs">
+      <DependentUpon>dbauth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +80,9 @@
     <Compile Include="WordHelper.cs" />
     <EmbeddedResource Include="CargoRequest.resx">
       <DependentUpon>CargoRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbauth.resx">
+      <DependentUpon>dbauth.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

@@ -84,3 +84,17 @@ D:\Студент41\Мои документы\GitHub\2021askills\Askills2021app\
 D:\Студент41\Мои документы\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\K4os.Hash.xxHash.dll
 D:\Студент41\Мои документы\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\MySql.Data.xml
 D:\Студент41\Мои документы\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.CopyComplete
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\MySql.Data.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\Google.Protobuf.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\ZstdNet.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\System.Memory.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\System.Buffers.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\bin\Debug\MySql.Data.xml
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.exe.config
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.csproj.CopyComplete
+C:\Users\markm\Documents\GitHub\2021askills\Askills2021app\Askills2021app\obj\Debug\Askills2021app.dbauth.resources
