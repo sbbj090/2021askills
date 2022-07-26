@@ -17,25 +17,33 @@ namespace Askills2021app
         {
             InitializeComponent();
         }
-
+        bool dbConnection = true;
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form CargoRequest = new CargoRequest();
-            CargoRequest.StartPosition = FormStartPosition.Manual;
-            CargoRequest.Left = this.Left;
-            CargoRequest.Top = this.Top;
-            CargoRequest.Show();
+            if (dbConnection == true)
+            {
+                this.Hide();
+                Form CargoRequest = new CargoRequest();
+                CargoRequest.StartPosition = FormStartPosition.Manual;
+                CargoRequest.Left = this.Left;
+                CargoRequest.Top = this.Top;
+                CargoRequest.Show();
+            }
+            else
+                MessageBox.Show("База данных не подключена");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            Form dbauth = new dbauth();
-            dbauth.StartPosition = FormStartPosition.Manual;
-            dbauth.Left = this.Left;
-            dbauth.Top = this.Top;
-            dbauth.Show();
+            //if ()
+            {
+                //this.Hide();
+                Form dbauth = new dbauth();
+                //dbauth.StartPosition = FormStartPosition.Manual;
+                dbauth.Left = this.Left;
+                dbauth.Top = this.Top;
+                dbauth.Show();
+            }
 
             /*
             string connectionString;
