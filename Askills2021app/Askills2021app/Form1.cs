@@ -16,8 +16,11 @@ namespace Askills2021app
         public Form1()
         {
             InitializeComponent();
+            //label1 = if(conn.Open()==true);
         }
-        bool dbConnection = true;
+
+        public bool dbConnection;
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (dbConnection == true)
@@ -52,5 +55,9 @@ namespace Askills2021app
             sqlcn = new SqlConnection(connectionString);
             sqlcn.Open();*/
         }
+       /* public string dbStatus
+        {
+            
+        }*/
     }
 }

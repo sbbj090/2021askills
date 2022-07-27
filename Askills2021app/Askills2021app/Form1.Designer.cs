@@ -134,8 +134,7 @@ namespace Askills2021app
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(147, 17);
-            this.toolStripStatusLabel1.Text = "База данных подключена";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(0, 17);
             // 
             // Form1
             // 

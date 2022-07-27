@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -307,7 +308,7 @@ namespace Askills2021app
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            string em_z = "НИХУЯ@МАИЛ";
+            /*string em_z = "НИХУЯ@МАИЛ";
             string tel_z = "МОБИЛА";
 
             if ((textBox4.Text).Contains('@'))
@@ -317,17 +318,14 @@ namespace Askills2021app
             if ((textBox4.Text).Contains('+'))
             {
                 tel_z = textBox4.Text;
-            }
+            }*/
 
-
-
-
-            DB dB = new DB();
-
-            MySqlCommand command_z = new MySqlCommand
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.CommandText = "insert into zakazchik(name_zauavki) values ('"+textBox1.Text+"')";
+            /*MySqlCommand command_z = new MySqlCommand
                 ("INSERT INTO `rosatomlogistics`.`заказчик` " +
                 "(`Номер заявки` ,`Наименование` ,`Адрес точки отправления` ,`ИНН` ,`Ответственный` ,`Телефон` ,`E-mail` ,`Дата и время отправления`)" +
-                "VALUES(NULL, @ORG_Z, @TO_Z, @INN_Z, @OTV_Z, @TEL_Z, @EM_Z,CURRENT_TIMESTAMP); ", dB.getConnection());
+                "VALUES(NULL, @ORG_Z, @TO_Z, @INN_Z, @OTV_Z, @TEL_Z, @EM_Z,CURRENT_TIMESTAMP); ", dB.getConnection())
             command_z.Parameters.Add("@ORG_Z", MySqlDbType.VarChar).Value = textBox1.Text;
             command_z.Parameters.Add("@TO_Z", MySqlDbType.VarChar).Value = textBox10.Text;
             command_z.Parameters.Add("@INN_Z", MySqlDbType.Int64).Value = maskedTextBox1.Text;
@@ -345,7 +343,7 @@ namespace Askills2021app
                 MessageBox.Show("Ошибка заполнения заявки");
 
             dB.closeConnection();
-
+            */
 
 
 
@@ -385,6 +383,7 @@ namespace Askills2021app
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             this.Close();
         }
 
