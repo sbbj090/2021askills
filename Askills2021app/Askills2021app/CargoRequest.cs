@@ -1,4 +1,6 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +18,7 @@ namespace Askills2021app
         {
             InitializeComponent();
         }
+
         private void CargoRequest_FormClosed(object sender, FormClosedEventArgs e)
         {
             this.Hide();
@@ -43,7 +46,7 @@ namespace Askills2021app
             }
         }
         //
-        private void textBox2_Enter(object sender, EventArgs e)
+        /*private void textBox2_Enter(object sender, EventArgs e)
         {
             if (textBox2.Text == "ИНН")
             {
@@ -57,6 +60,25 @@ namespace Askills2021app
             {
                 textBox2.Text = "ИНН";
                 textBox2.ForeColor = Color.Gray;
+            }
+        }*/
+        //
+        private void maskedTextBox1_Enter(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text == "ИНН")
+            {
+                maskedTextBox1.Text = "";
+                maskedTextBox1.ForeColor = Color.Black;
+                maskedTextBox1.Mask = "000000000000";
+            }
+        }
+        private void maskedTextBox1_Leave(object sender, EventArgs e)
+        {
+            if (maskedTextBox1.Text == "")
+            {
+                maskedTextBox1.Mask = "";
+                maskedTextBox1.Text = "ИНН";
+                maskedTextBox1.ForeColor = Color.Gray;
             }
         }
         //
@@ -85,13 +107,15 @@ namespace Askills2021app
                 textBox4.ForeColor = Color.Black; 
             }
         }
-        private void textBox4_Leave(object sender, EventArgs e)
+        public void textBox4_Leave(object sender, EventArgs e)
         {
             if (textBox4.Text == "")
             {
                 textBox4.Text = "Контактный телефон или Email";
                 textBox4.ForeColor = Color.Gray;
             }
+
+            
         }
         //
         private void textBox5_Enter(object sender, EventArgs e)
@@ -265,14 +289,70 @@ namespace Askills2021app
             }
         }
         //
+        private void richTextBox1_Enter(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text == "Описание")
+            {
+                richTextBox1.Text = "";
+                richTextBox1.ForeColor = Color.Black;
+            }
+        }
 
+        private void richTextBox1_Leave(object sender, EventArgs e)
+        {
+            if (richTextBox1.Text == "")
+            {
+                richTextBox1.Text = "Описание";
+                richTextBox1.ForeColor = Color.Gray;
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
+            /*string em_z = "НИХУЯ@МАИЛ";
+            string tel_z = "МОБИЛА";
+
+            if ((textBox4.Text).Contains('@'))
+            {
+                em_z = textBox4.Text;
+            }
+            if ((textBox4.Text).Contains('+'))
+            {
+                tel_z = textBox4.Text;
+            }*/
+
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.CommandText = "insert into zakazchik(name_zauavki) values ('"+textBox1.Text+"')";
+            /*MySqlCommand command_z = new MySqlCommand
+                ("INSERT INTO `rosatomlogistics`.`заказчик` " +
+                "(`Номер заявки` ,`Наименование` ,`Адрес точки отправления` ,`ИНН` ,`Ответственный` ,`Телефон` ,`E-mail` ,`Дата и время отправления`)" +
+                "VALUES(NULL, @ORG_Z, @TO_Z, @INN_Z, @OTV_Z, @TEL_Z, @EM_Z,CURRENT_TIMESTAMP); ", dB.getConnection())
+            command_z.Parameters.Add("@ORG_Z", MySqlDbType.VarChar).Value = textBox1.Text;
+            command_z.Parameters.Add("@TO_Z", MySqlDbType.VarChar).Value = textBox10.Text;
+            command_z.Parameters.Add("@INN_Z", MySqlDbType.Int64).Value = maskedTextBox1.Text;
+            command_z.Parameters.Add("@OTV_Z", MySqlDbType.VarChar).Value = textBox3.Text;
+            command_z.Parameters.Add("@TEL_Z", MySqlDbType.VarChar).Value = tel_z;
+            command_z.Parameters.Add("@EM_Z", MySqlDbType.VarChar).Value = em_z;
+
+
+
+            dB.openConnection();
+
+            if (command_z.ExecuteNonQuery() == 1)
+                MessageBox.Show("Заявка создана");
+            else
+                MessageBox.Show("Ошибка заполнения заявки");
+
+            dB.closeConnection();
+            */
+
+
+
+
             var helper = new WordHelper("Zayavka.doc");
             var items = new Dictionary<string, string>
             {
                 {"<ORGZ>", textBox1.Text },
-                {"<INN>", textBox2.Text },
+                {"<INN>", maskedTextBox1.Text },
                 {"<OTVZ>", textBox3.Text },
                 {"<EMAILZ>", textBox4.Text },
                 {"<CNAME>", textBox5.Text },
@@ -284,17 +364,29 @@ namespace Askills2021app
                 {"<TO>", textBox10.Text },
                 {"<TP>", textBox12.Text },
                 {"<OTVP>", textBox15.Text },
-                {"<TELP>", textBox16.Text }
-                //desc
+                {"<TELP>", textBox16.Text },
+                {"<DESC>", richTextBox1.Text },
                 //dto
                 //dtp
                 //prc
                 
             };
             helper.Process(items);
+
+            
+
+
             MessageBox.Show("Заявка создана.");
+
+
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
 
+            this.Close();
+        }
+
+        
     }
 }
